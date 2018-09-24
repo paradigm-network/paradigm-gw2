@@ -12,4 +12,12 @@ When an API gateway calls a function computing service, it converts the relevant
 
 The parameters are transmitted in the following fomat from the API gateway to the FEE. When the FEE is used as the back-end service of the API gateway, the API gateway transmits the request parameters to the input of the event computed by the FFE through a fixed Map structure. FEE obtains the required parameters through the following structure, and then processes.
 
-
+	{
+   	 "path":"api request path",
+   	 "httpMethod":"request method name",
+   	 "headers":{all headers,including system headers},
+   	 "queryParameters":{query parameters},
+   	 "pathParameters":{path parameters},
+   	 "body":"string of request payload",
+ 	   "isBase64Encoded":"true|false, indicate if the body is Base64-encode"
+	}
