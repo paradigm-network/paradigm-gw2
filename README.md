@@ -21,3 +21,7 @@ The parameters are transmitted in the following fomat from the API gateway to th
    	 "body":"string of request payload",
  	   "isBase64Encoded":"true|false, indicate if the body is Base64-encode"
 	}
+
+
+
+After the calculation of the FEE, it returns the parameter in the following JSON format. FEE returns the output to API gateway for furthering execution.
