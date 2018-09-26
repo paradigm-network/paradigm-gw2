@@ -114,3 +114,18 @@ Make sure you explain your solution and why you are doing what you are  doing, a
 
 Reported-by: whoever-reported-it &
 Signed-off-by: Your Name [youremail@yourhost.com](mailto:youremail@yourhost.com)
+
+
+
+## Open source community
+### Site
+
+- <https://paradigm.fund/>
+
+### Developer Discord Group
+
+- <https://discord.gg/kU3ewZQ/>
+
+## License
+
+The Paradigm-vm library is licensed under the GNU Lesser General Public License v3.0, read the LICENSE file in the root directory of the project for details.
