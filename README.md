@@ -1,8 +1,8 @@
-<h1 align="center">Paradigm VM </h1>
+<h1 align="center">Paradigm Gw2 </h1>
 <h4 align="center">Version 0.1 </h4>
 
-[![GoDoc](https://godoc.org/github.com/paradigm-network/paradigm-vm?status.svg)](https://godoc.org/github.com/paradigm-network/paradigm-vm)
-[![Go Report Card](https://goreportcard.com/badge/github.com/paradigm-network/paradigm-vm)](https://goreportcard.com/report/github.com/paradigm-network/paradigm-vm)
+[![GoDoc](https://godoc.org/github.com/paradigm-network/paradigm-gw2?status.svg)](https://godoc.org/github.com/paradigm-network/paradigm-gw2)
+[![Go Report Card](https://goreportcard.com/badge/github.com/paradigm-network/paradigm-gw2)](https://goreportcard.com/report/github.com/paradigm-network/paradigm-gw2)
 [![Travis](https://travis-ci.org/paradigm/paradigm.svg?branch=master)](https://travis-ci.org/paradigm/paradigm)
 [![Discord](https://img.shields.io/discord/102860784329052160.svg)](https://discord.gg/kU3ewZQ)
 
@@ -11,7 +11,7 @@ Welcome to Paradigm Network !
 The code is currently alpha quality, but is in the process of rapid development. The master code may be unstable; stable versions can be downloaded in the release page.
 
 
-## Paradigm GW2 
+## Paradigm-Gw2 
 
 Paradigm employs DAG-based structure to estabilish the FAAS architecture. In combination with the FAAS structure, there are two similarities between FAAS and DAG. 
 
@@ -57,12 +57,42 @@ After the calculation of the FEE, it returns the parameter in the following JSON
          "body":"..."
 	}
 	
-	
+## Get Paradigm-gw2
+### Get from source code
+
+Clone the Paradigm-VM repository into the appropriate $GOPATH/src/github.com/paradigm-network directory.
+
+```
+$ git clone --recursive https://github.com/paradigm-network/paradigm-gw2.git
+```
+or
+```
+$ go get github.com/paradigm-network/paradigm-gw2
+```
+Fetch the dependent third party packages with glide.
+
+```
+$ cd $GOPATH/src/github.com/paradigm-network/paradigm-gw2
+
+$ make install
+```
+
+Build the source code with make.
+
+```
+$ make all
+```
+
+After building the source code sucessfully, you should see two executable programs:
+
+- `paradigm`: the node program/command line program for paradigm node control
+
+
+
 ## Build development environment
-The requirements to build Paradigm VM are:
+The requirements to build Paradigm-gw2 are:
 
 - Golang version 1.9 or later
 - Glide (a third party package management tool)
 - Properly configured Go language environment
-- Golang supported operating system	
-	
+- Golang supported operating system
