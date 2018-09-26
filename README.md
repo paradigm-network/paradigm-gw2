@@ -83,9 +83,9 @@ Build the source code with make.
 $ make all
 ```
 
-After building the source code sucessfully, you should see two executable programs:
+After building the source code sucessfully, you should see an executable program:
 
-- `paradigm`: the node program/command line program for paradigm node control
+- `paradigm`: the command line program for Paradigm FEE control
 
 
 
