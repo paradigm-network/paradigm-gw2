@@ -1,3 +1,18 @@
+<h1 align="center">Paradigm VM </h1>
+<h4 align="center">Version 0.1 </h4>
+
+[![GoDoc](https://godoc.org/github.com/paradigm-network/paradigm-vm?status.svg)](https://godoc.org/github.com/paradigm-network/paradigm-vm)
+[![Go Report Card](https://goreportcard.com/badge/github.com/paradigm-network/paradigm-vm)](https://goreportcard.com/report/github.com/paradigm-network/paradigm-vm)
+[![Travis](https://travis-ci.org/paradigm/paradigm.svg?branch=master)](https://travis-ci.org/paradigm/paradigm)
+[![Discord](https://img.shields.io/discord/102860784329052160.svg)](https://discord.gg/kU3ewZQ)
+
+Welcome to Paradigm Network !
+
+The code is currently alpha quality, but is in the process of rapid development. The master code may be unstable; stable versions can be downloaded in the release page.
+
+
+## Paradigm GW2 
+
 Paradigm employs DAG-based structure to estabilish the FAAS architecture. In combination with the FAAS structure, there are two similarities between FAAS and DAG. 
 
 >(1) **Scalability**: DAG is of good scalability and unlimited node growth. In FAAS, one function does only one thing, and can expands the volume independently without worrying about affecting other functions. And it can expands faster because of its smaller granularity. 
@@ -16,6 +31,8 @@ API gateway connects to the Function Execution Engine, you can safely open your 
 
 When an API gateway calls a function computing service, it converts the relevant data of the API into a Map format and passes it to the function computing service. After the function calculates the service, it returns the related data, such as statusCode, headers, body, in the form of Output Format. The API gateway then maps the content returned by the function calculation to the statusCode, header, body, etc. and returns it to the client.
 
+
+## Parameter Format
 
 The parameters are transmitted in the following fomat from the API gateway to the FEE. When the FEE is used as the back-end service of the API gateway, the API gateway transmits the request parameters to the input of the event computed by the FFE through a fixed Map structure. FEE obtains the required parameters through the following structure, and then processes.
 
@@ -41,5 +58,11 @@ After the calculation of the FEE, it returns the parameter in the following JSON
 	}
 	
 	
-	
+## Build development environment
+The requirements to build Paradigm VM are:
+
+- Golang version 1.9 or later
+- Glide (a third party package management tool)
+- Properly configured Go language environment
+- Golang supported operating system	
 	
